@@ -34,6 +34,7 @@ section {
 h1{
     font-family: "Rowdies", sans-serif;
     position: absolute;
+    color:#E73BA0;
 }
 
 h2 {
@@ -46,6 +47,13 @@ h2 {
 
 .hero article{
     position: absolute;
+    top: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    border: 15px;
+    color: white;
 }
 
 .hero img {
@@ -59,7 +67,7 @@ h2 {
 }
 
 #clientImage {
-    position: absolute;
+    float: right;
     width:100px;
     height: auto;
 }
