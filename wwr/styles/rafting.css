@@ -6,18 +6,24 @@
     --border: 1px solid rgb(0 0 0 / 0.1);
 }
 
-p {
+p, label, input, button, textarea {
     font-family: "Open Sans", sans-serif;
 }
 
-a {
+label, .subtitle {
+    font-weight: bold;
+}
+
+a, p a{
     text-decoration: none;
+    color:#F0F0C9;
 }
 
 img {
     width: 100px;
     height: auto;
-    padding: 3px;
+    border: 2px solid #00000093;
+    border-radius: 6px; 
 }
 
 header {
@@ -42,7 +48,8 @@ header {
     color: #000000;
     background-color: #4a6e1573;
     padding: 20px;
-    border: 1px solid black;
+    border: 2px solid #00000093;
+    border-radius: 6px;
     width: 150px;
 }
 
@@ -58,6 +65,7 @@ section {
 .logo img {
     width: 150px;
     height: auto;
+    border: 0;
 }
 
 .hero {
@@ -82,7 +90,6 @@ section {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid #000000;
     padding: 0;
     float: right;
 }
@@ -96,7 +103,8 @@ section {
     height: auto;
     padding: 15px;
     margin: 10px;
-    border: 10px;
+    border: 2px solid #00000093;
+    border-radius: 6px;
 }
 
 #p1 {
@@ -107,7 +115,12 @@ section {
     float: right;
     max-width:250px;
     height: auto;
-    border: 1px solid; 
+}
+
+h1 {
+    text-align: left;
+    font-family: "Rowdies", sans-serif;
+    font-size: 30px;
 }
 
 h2 {
@@ -123,6 +136,7 @@ h2 {
     padding: 15px;
     margin: 10px;
     border: 10px;
+    border-radius: 6px;
 }
 
 #h {
@@ -134,10 +148,8 @@ h2 {
 }
 
 #cabinImage {
-    width: 300px;
+    width: 100%;
     height: auto;
-    border: 1px solid black;
-    padding: 0;
 }
 
 .awaits {
@@ -149,13 +161,12 @@ h2 {
     padding: 15px;
     margin: 10px;
     border: 10px;
+    border-radius: 6px;
 }
 
 .awaits img {
-    width: 200px;
+    width: 100%;
     height: auto;
-    border: 1px solid black;
-    padding: 0;
 }
 
 .sociallinks img { 
@@ -176,4 +187,130 @@ footer {
 
 .p2 {
     place-self: center;
+}
+
+/* Contact section */
+
+#mh, #employees {
+    background-color: #00000033;
+    padding: 15px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 6px;
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid #0000002c;
+    width: 90%;
+}
+
+#contactsection {
+    display: grid;
+    grid-template: 1fr / 3fr 2fr;
+    gap: 6px;
+    padding: 10px;
+    border: 2px;
+}
+
+#leadinfo, #contactinfo {
+    background-color:#00000077;
+    border: 2px solid #00000093;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+#compinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.infobox {
+    display: flex;
+}
+
+.infobox img{
+    width: 4%;
+    height: auto;
+    border: 0;
+    padding: 9px;
+    padding-left: 0; 
+    padding-right: 3px;
+    margin: 9px;
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+iframe {
+    width: 90%;
+    height:250px;
+    border-radius: 6px;
+}
+
+#iframe {
+    display:flex;
+    justify-content: center;
+}
+
+#sociallinks {
+    display: flex;
+}
+
+#sociallinks img{
+    width: 20px;
+    height: auto;
+    padding: 3px;
+    border: 10px;
+}
+
+#emploimg {
+    display: flex;
+    justify-content: space-around;
+}
+
+#emploimg img {
+    width: 90%;
+    height: auto;
+}
+
+#namemail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#topic {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr; 
+}
+
+input[type="text"], input[type="email"] {
+    width: 70%;
+    height: calc(0.6 * (4vh + 1vw));
+}
+
+textarea {
+    width: 100%;
+}
+
+#leadinput {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#checkbox {
+    padding: 10px;
+}
+
+#button {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4a6e1583;
+    color: #F0F0C9;
+    width: 25%;
+    border-radius: 6px;
+    font-weight: bold;
 }
