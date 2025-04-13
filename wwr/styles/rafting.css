@@ -107,7 +107,7 @@ section {
     justify-content: space-between;
     position: absolute;
     background-color: #000000cc;
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 15px;
     margin: 10px;
@@ -343,7 +343,7 @@ button[type="submit"] {
     position: absolute;
     display: block;
     background-color: #000000cc;
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 15px;
     margin: 10px;
