@@ -10,7 +10,7 @@ p, label, input, button, textarea {
     font-family: "Open Sans", sans-serif;
 }
 
-label, .subtitle {
+label, .subtitle, #p2 {
     font-weight: bold;
 }
 
@@ -27,12 +27,11 @@ img {
 }
 
 header {
-    margin: 1rem auto;
     border: 2px solid #000000;
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-    background-color:#F0F0C9;
+    background-color:#bbc6ca;
 }
 
 .navegation {
@@ -41,21 +40,26 @@ header {
     justify-content: space-around;
 }
 
+#index:hover, #about:hover, #contact:hover, #trip:hover {
+    background: black;
+    color: white;
+}
+
 .navegation a {
     display: block;
     font-size: 25px;
     font-family: "Rowdies", sans-serif;
     color: #000000;
-    background-color: #4a6e1573;
-    padding: 20px;
-    border: 2px solid #00000093;
+    padding: 10px;
+    border: 2px;
     border-radius: 6px;
-    width: 150px;
 }
 
 body {
     background-color: #19647E;
     color: #F0F0C9;
+    width: 960px;
+    place-self: center;
 }
 
 section {
@@ -77,6 +81,10 @@ section {
     border: 10px;
 }
 
+#id {
+    width: 90%;
+}
+
 .hero h1 {
     align-self: flex-start;
     font-size: 50px;
@@ -86,7 +94,7 @@ section {
     border-bottom: 3px solid #F0F0C9;
 }
 
-.hero img {
+.hero img, .overhero img{
     display: block;
     width: 100%;
     height: auto;
@@ -99,7 +107,7 @@ section {
     justify-content: space-between;
     position: absolute;
     background-color: #000000cc;
-    width: 90%;
+    width: 60%;
     height: auto;
     padding: 15px;
     margin: 10px;
@@ -108,12 +116,12 @@ section {
 }
 
 #p1 {
-    order:-1;
+    order: -1;
 }
 
 #clientImage {
     float: right;
-    max-width:250px;
+    max-width:15%;
     height: auto;
 }
 
@@ -129,14 +137,17 @@ h2 {
     font-size: 30px;}
 
 .history {
-    background-color: #00000033;
     display: grid;
-    grid-template: 30px 1fr 1px / 1fr 300px 1fr;
+    grid-template: 1fr 1px / 1fr 300px 1fr;
     gap: 50px;
+}
+
+#history, #adventure, #book {
     padding: 15px;
     margin: 10px;
     border: 10px;
     border-radius: 6px;
+    background-color: #00000033;
 }
 
 #h {
@@ -153,15 +164,10 @@ h2 {
 }
 
 .awaits {
-    background-color: #00000033;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 1fr;
     gap: 20px;
-    padding: 15px;
-    margin: 10px;
-    border: 10px;
-    border-radius: 6px;
 }
 
 .awaits img {
@@ -186,7 +192,7 @@ footer {
 }
 
 .p2 {
-    place-self: center;
+    place-self: left;
 }
 
 /* Contact section */
@@ -304,13 +310,134 @@ textarea {
 #button {
     display: flex;
     justify-content: right;
-    padding: 5px;
+    padding: 15px;
 }
 
 button[type="submit"] {
-    background-color: #4a6e1583;
+    background-color: #00000093;
     color: #F0F0C9;
     width: 25%;
     border-radius: 6px;
     font-weight: bold;
+    font-family: "Rowdies", sans-serif;
+    cursor: pointer;
+}
+
+#button2 {
+    display: flex;
+    justify-content: left;
+    padding: 15px;    
+    color: #F0F0C9;
+    width: 40%;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#p2 {
+    font-size: 50px;
+    place-self: center;
+    font-family: "Rowdies", sans-serif;
+}
+
+.overhero {
+    position: absolute;
+    display: block;
+    background-color: #000000cc;
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #00000093;
+    border-radius: 6px;
+}
+
+#textlink {
+    display: block;
+    place-self: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #00000093;
+    font-family: "Rowdies", sans-serif;
+    border-radius: 6px;
+}
+
+#textlink:hover, #submit:hover, button:hover {
+    background-color: white;
+    color: black;
+}
+
+.intext, #paragraph {
+    background-color: #00000033;
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 6px;
+    place-self: center;
+}
+
+#purpose {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    background-color: #00000033;
+    gap: 1rem;
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 6px;
+    place-self: center;
+}
+
+#phome {
+    grid-column: 1/3;
+}
+
+#purpose img {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    overflow: scroll;
+    width: 100%;
+    height: fit-content;
+    display: block;
+    overflow-y: hidden;
+    border-spacing: 10px;
+    margin: 0 auto;
+}
+
+tbody {
+    white-space: nowrap;
+}
+
+table img{
+    width: 450px;
+    height: auto;
+}
+
+td {
+    padding: 5px 10px;
+    width: 100%;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+figcaption {
+    place-self: center;
+    padding: 5px;
+    font-family: "Rowdies", sans-serif;
+}
+
+.autolinebreak {
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: -webkit-pre-wrap;
+    white-space: normal;
 }
