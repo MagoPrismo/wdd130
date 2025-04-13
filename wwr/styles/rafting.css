@@ -67,7 +67,7 @@ section {
 }
 
 .logo img {
-    width: 150px;
+    width: 100px;
     height: auto;
     border: 0;
 }
@@ -85,7 +85,7 @@ section {
     width: 90%;
 }
 
-.hero h1 {
+.hero h2 {
     align-self: flex-start;
     font-size: 50px;
     font-family: "Rowdies", sans-serif;
@@ -430,6 +430,14 @@ figcaption {
     place-self: center;
     padding: 5px;
     font-family: "Rowdies", sans-serif;
+    background-color: #00000093;
+    gap: 1rem;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 6px;
+    place-self: center;
 }
 
 .autolinebreak {
@@ -440,4 +448,13 @@ figcaption {
     word-wrap: break-word;
     white-space: -webkit-pre-wrap;
     white-space: normal;
+    background-color: #00000093;
+    gap: 1rem;
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 6px;
+    place-self: center;
 }
